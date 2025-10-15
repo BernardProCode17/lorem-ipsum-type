@@ -6,7 +6,7 @@ export default function Rank() {
     return (
         <>
             <RankTable />
-            <GameUser/>
+            {/* <GameUser/> */}
         </>
     )
 }

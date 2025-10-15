@@ -1,0 +1,100 @@
+/* Game options main */
+.gamemain-gameoptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-colour-light);
+}
+
+/* Game options */
+.gameoptions-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    width: 90%;
+}
+
+.gameoptions-title-h2{
+    margin: 1rem;
+}
+
+/* Game options time */
+.gameoptions-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.gameoptions-time-title {
+    color: var(--header-colour);
+    font-weight: 700;
+    margin: 0;
+}
+
+.gameoptions-time-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0.3rem;
+    width: 100%;
+}
+
+.time-div-button {
+    margin: 0 0.5rem;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    width: 5rem;
+    background-color: var(--header-colour);
+}
+
+.time-active {
+    background-color: var(--green);
+}
+
+/* Game options words */
+.gameoptions-words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.gameoptions-words-title {
+    color: var(--header-colour);
+    font-weight: 700;
+    margin: 0;
+}
+
+.gameoptions-words-div {
+    display: flex;
+    align-items: center;
+    margin: 0.3rem;
+}
+
+.words-div-button {
+    margin: 0 0.5rem;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    width: 9rem;
+    background-color: var(--header-colour);
+}
+.words-active {
+    background-color: var(--green);
+}

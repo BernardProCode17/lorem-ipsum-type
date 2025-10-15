@@ -1,0 +1,48 @@
+.gamemain-gameinformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-colour-light);
+    width: 100%;
+}
+
+.gameinformation-title-h2{
+    margin: 1rem;
+}
+
+.gameinformation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.gameinformation-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    width: 15%;
+}
+
+.gameinformation-title{
+    color: var(--header-colour);
+    margin:0;
+}
+.gameinformation-span{
+    color: var(--header-colour);
+}
+
+.timer{
+    color: var(--timer);
+}
+
+.current-word-count{
+color: var(--green);
+}

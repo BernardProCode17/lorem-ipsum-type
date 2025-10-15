@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Home from './pages/Home'
 import Rank from './pages/Rank'
-import './styles/App.css'
 
 export default function App() {
   return (

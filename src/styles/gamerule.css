@@ -1,0 +1,105 @@
+/* Game rules Main */
+.gamerules {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: start;
+    align-items: center;
+}
+
+.gamerules-mode-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+/* Games rules list */
+.gamerules-mode {
+    background-color: var(--background-colour-light);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.gamerules-mode-ol {
+    text-align: start;
+    /* width: 100%; */
+}
+
+.gamerules-mode-li {
+    font-weight: 300;
+}
+
+.gamerules-mode-li::marker {
+    font-weight: 700;
+    color: blue;
+}
+
+/* Games rules mode options */
+.gamerules-options {
+    background-color: var(--background-colour-light);
+    border-radius: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+.gamerules-options-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+/* game mode option time */
+.options-time-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1;
+    padding: 0 1rem;
+    text-align: start;
+
+}
+
+.option-time-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.options-time-li-title {
+    font-weight: 700;
+    margin: 0;
+    color: blue;
+}
+
+.options-time-li {
+    text-align: start;
+    margin: 0 1rem;
+}
+
+/* Game mode options words */
+.options-words-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1;
+    padding: 0 1rem;
+    text-align: start;
+}
+
+.option-words-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.options-words-li-title {
+    font-weight: 700;
+    margin: 0;
+    color: blue;
+}
+
+.options-words-li {
+    text-align: start;
+    margin: 0 1rem;
+}

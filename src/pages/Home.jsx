@@ -6,10 +6,10 @@ import GameRules from "../components/GameRules";
 export default function Home() {
 
     return (
-        <div>
+        <div className="lt-main">
             <GameRules />
 
-            <div>
+            <div className="lt-main-right lt-gamemain">
                 <Gameoptions />
                 <GameInformation />
                 <GameDisplay />

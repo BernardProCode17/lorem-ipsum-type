@@ -1,16 +1,20 @@
-export default function GameDisplay(){
-
-    return(
-        <div>
-            <div>
-                <form>
-                    <textarea></textarea>
-                </form>
+export default function GameDisplay() {
+const textareaplaceholder = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem tempore tenetur perferendis consequatur? Laboriosam illum facere nemo, maxime fuga delectus nostrum praesentium hic cum, vero aperiam, ab ea. Illo, nisi.   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem tempore tenetur perferendis consequatur? Laboriosam illum facere nemo, maxime fuga delectus nostrum praesentium hic cum, vero aperiam, ab ea. Illo, nisi."
+    return (
+        <div className="gamemain-display">
+            <div className="display-main-textarea">
+                <textarea className="display-textarea" readOnly placeholder={textareaplaceholder}></textarea>
             </div>
 
-            <div>
-                <button>Start</button>
-                <button>Reset</button>
+            <div className="display-main-inputcontrol">
+                <div className="display-main-input">
+                    <input type="text" className="display-input" />
+                </div>
+
+                <div className="display-controls">
+                    <button className="display-control-start">Start</button>
+                    <button className="display-control-reset">Reset</button>
+                </div>
             </div>
         </div>
     )

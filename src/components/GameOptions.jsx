@@ -1,46 +1,46 @@
 export default function Gameoptions() {
 
     return (
-        <section>
-            <div>
-                <h2>Choose Game Options</h2>
+        <section className="gamemain-gameoptions">
+            <div className="gameoptions-title">
+                <h2 className="gameoptions-title-h2">Choose Game Options</h2>
             </div>
 
-            <div>
-                <div>
-                    <h3>Time</h3>
+            <div className="gameoptions-options">
+                <div className="gameoptions-time">
+                    <h3 className="gameoptions-time-title">Time</h3>
 
-                    <div>
-                        <button>
-                            <span>Casual</span>
+                    <div className="gameoptions-time-div">
+                        <button className="time-div-button">
+                            <span className="time-div-span">Casual</span>
                         </button>
 
-                        <button>
-                            <span>Normal</span>
+                        <button className="time-div-button time-active">
+                            <span className="time-div-span">Normal</span>
                         </button>
 
-                        <button>
-                            <span>Typist</span>
+                        <button className="time-div-button">
+                            <span className="time-div-span">Typist</span>
                         </button>
 
                     </div>
 
                 </div>
 
-                <div>
-                    <h3>Words</h3>
+                <div className="gameoptions-words">
+                    <h3 className="gameoptions-words-title">Words</h3>
 
-                    <div>
-                        <button>
-                            <span>Lorem</span>
+                    <div className="gameoptions-words-div">
+                        <button className="words-div-button words-active">
+                            <span className="words-div-span">Lorem</span>
                         </button>
 
-                        <button>
-                            <span>Random Words</span>
+                        <button className="words-div-button">
+                            <span className="words-div-span">Random Words</span>
                         </button>
                         
-                        <button>
-                            <span>Real Sentences</span>
+                        <button className="words-div-button">
+                            <span className="words-div-span">Real Sentences</span>
                         </button>
 
                     </div>

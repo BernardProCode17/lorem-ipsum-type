@@ -1,16 +1,26 @@
-import { casual, normal, typist } from '../utils/gameruleslist'
+import { casual, normal, typist } from '../utils/gameruleslist';
+import { useGame } from '../utils/appContext'
 export default function GameRules() {
+    const { selectedMode } = useGame();
+
+    const rulesMap = {
+        casual: casual,
+        normal: normal,
+        typist: typist
+    };
+
+    const currentRules = rulesMap[selectedMode];
+    const modeTitle = selectedMode.charAt(0).toUpperCase() + selectedMode.slice(1);
 
     return (
         <section className="lt-main-left gamerules">
             <h2 className="gamerules-title">Game Rules</h2>
 
             <div className="gamerules-mode">
-                {/* map over an array in an order list with game rules for the selected game mode */}
-                <p className='gamerules-mode-title'>Casual Mode</p>
+                <p className='gamerules-mode-title'>{modeTitle}</p>
 
                 <ol className='gamerules-mode-ol'>
-                    {typist.map((rule, index) => (
+                    {currentRules.map((rule, index) => (
                         <li key={index} className='gamerules-mode-li'>{rule}</li>
                     ))}
                 </ol>

@@ -1,0 +1,130 @@
+.lt-rank-modal {
+    background-color: var(--background-colour-light);
+    position: absolute;
+    top: 10rem;
+    left: 35rem;
+    width: 30%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0.5rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+.rank-modal-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.rank-modal-title {
+    margin: 0;
+    padding: 0;
+}
+
+/* fields inputs */
+.modal-input-label {
+    font-size: 1.1rem;
+    color: blue;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.modal-input-username {
+    width: 15rem;
+    height: 1.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 0.2rem;
+    color: var(--header-colour);
+}
+
+.modal-input-username:focus-within {
+    outline: none;
+}
+
+.modal-input-score {
+    background-color: #fff;
+    width: 10rem;
+    height: 3rem;
+    color: var(--header-colour);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+}
+
+.modal-input-abb {
+    width: 5rem;
+    height: auto;
+    color: var(--header-colour);
+    font-size: 1.3rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+.modal-input-abb:focus-within {
+    outline: none;
+}
+
+.modal-input-pin {
+    width: 5rem;
+    height: 1.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 0.2rem;
+    color: var(--header-colour);
+}
+
+.modal-input-pin:focus-within {
+    outline: none;
+}
+
+.modal-button {
+    background-color: #fff;
+    width: 10rem;
+    margin: 2rem 0;
+    color: var(--header-colour);
+    font-size: 1.3rem;
+    border: none;
+    position: relative;
+    overflow: visible;
+}
+
+/* underline element centered and 30% of the button width */
+.modal-button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0.5rem;
+    width: 50%;
+    height: 3px;
+    background: var(--header-colour); /* default color */
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 250ms ease, background-color 250ms ease;
+    pointer-events: none;
+}
+
+/* keep existing hover styles */
+.modal-button:hover {
+    background-color: var(--header-colour);
+    border: none;
+    color: #fff;
+}
+
+/* animate underline to its 30% width from center and switch to white on hover */
+.modal-button:hover::after {
+    transform: translateX(-50%) scaleX(1);
+    background-color: #fff;
+}

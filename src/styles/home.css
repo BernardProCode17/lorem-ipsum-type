@@ -22,8 +22,7 @@
 }
 
 
-/***** Main left *****/
-
+/***** Main left no-scroll bar *****/
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .lt-main-left::-webkit-scrollbar {
@@ -32,10 +31,12 @@
 
 /* Hide scrollbar for Firefox */
 .lt-main-left {
-    scrollbar-width: none; /* "none" hides the scrollbar */
+    scrollbar-width: none;
 }
 
-/***** Main right *****/
+
+/***** Main right no-scroll bar *****/
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .lt-main-right::-webkit-scrollbar {
     display: none;
@@ -43,5 +44,5 @@
 
 /* Hide scrollbar for Firefox */
 .lt-main-right {
-    scrollbar-width: none; /* "none" hides the scrollbar */
+    scrollbar-width: none; 
 }
